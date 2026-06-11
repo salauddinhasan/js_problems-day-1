@@ -79,16 +79,34 @@
 // Hint: Formula: (C × 9/5) + 32
 
 // fist solution
-function toFahrenheit(celsius) {
-  let Fahrenheit = (celsius * 9) / 5 + 32;
-  console.log(Fahrenheit);
-}
-let result = toFahrenheit(100);
+// function toFahrenheit(celsius) {
+//   let Fahrenheit = (celsius * 9) / 5 + 32;
+//   console.log(Fahrenheit);
+// }
+// let result = toFahrenheit(100);
 
-// second solution
-function toFahrenheit(celsius) {
-  return (celsius * 9) / 5 + 32;
-}
+// // second solution
+// function toFahrenheit(celsius) {
+//   return (celsius * 9) / 5 + 32;
+// }
 
-let result = toFahrenheit(100);
+// let result = toFahrenheit(100);
+// console.log(result);
+
+// Problem 5: Check Positive, Negative or Zero  [Easy]
+// Description: Write a function checkSign(n) that returns 'positive', 'negative', or 'zero' based on the value of n.
+// Example:
+// Input: -5  → Output: 'negative'Input: 0   → Output: 'zero'
+// Hint: Use if-else if-else statements.
+
+function checkSign(n) {
+  if (n > 0) {
+    return "positive";
+  } else if (n < 0) {
+    return "negative";
+  } else {
+    return "zero";
+  }
+}
+let result = checkSign(0);
 console.log(result);
