@@ -5,18 +5,18 @@
 // Hint: Try using destructuring or arithmetic operators.
 
 // first solution
-let a = 5;
-let b = 10;
-b = b - a;
-a = b + a;
-console.log(a, b);
+// let a = 5;
+// let b = 10;
+// b = b - a;
+// a = b + a;
+// console.log(a, b);
 
-// // seconde solution
-let p = 2;
-let c = 5;
+// // // seconde solution
+// let p = 2;
+// let c = 5;
 
-[p, c] = [c, p];
-console.log(p, c);
+// [p, c] = [c, p];
+// console.log(p, c);
 
 // Problem 2: Check Even or Odd  [Easy]
 // Description: Write a function isEven(n) that returns true if a number is even, and false if it is odd.
@@ -25,22 +25,70 @@ console.log(p, c);
 // Hint: Use the modulus (%) operator.
 
 // first solution
-function number(num) {
-  if (num % 2 === 0) {
-    console.log("Even");
-  } else {
-    console.log("odd");
-  }
+// function number(num) {
+//   if (num % 2 === 0) {
+//     console.log("Even");
+//   } else {
+//     console.log("odd");
+//   }
+// }
+// let result = number(8);
+
+// // second solution
+// function isEven(n) {
+//   if (n % 2 === 0) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
+// let result = isEven(8);
+// console.log(result);
+
+// Problem 3: Find the Largest of Three Numbers  [Easy]
+// Description: Write a function largest(a, b, c) that returns the largest of three numbers.
+// Example:
+// Input: 3, 7, 5  → Output: 7
+// Hint: Use Math.max() or if-else conditions.
+
+// first solution
+// function LargestNumber(a, b, c) {
+//   if (a > b && a > c) {
+//     return a;
+//   } else if (b > a && b > c) {
+//     return b;
+//   } else {
+//     return c;
+//   }
+// }
+
+// let largest = LargestNumber(3, 7, 5);
+// console.log(largest);
+
+// // second solution
+// function largestNum(a, b, c) {
+//   return Math.max(a, b, c);
+// }
+// let largest = largestNum(7, 8, 3);
+// console.log(largest);
+
+// Problem 4: Celsius to Fahrenheit  [Easy]
+// Description: Write a function toFahrenheit(celsius) that converts a Celsius temperature to Fahrenheit.
+// Example:
+// Input: 0   → Output: 32Input: 100 → Output: 212
+// Hint: Formula: (C × 9/5) + 32
+
+// fist solution
+function toFahrenheit(celsius) {
+  let Fahrenheit = (celsius * 9) / 5 + 32;
+  console.log(Fahrenheit);
 }
-let result = number(8);
+let result = toFahrenheit(100);
 
 // second solution
-function isEven(n) {
-  if (n % 2 === 0) {
-    return true;
-  } else {
-    return false;
-  }
+function toFahrenheit(celsius) {
+  return (celsius * 9) / 5 + 32;
 }
-let result = isEven(8);
+
+let result = toFahrenheit(100);
 console.log(result);
